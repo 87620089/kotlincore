@@ -1,0 +1,7 @@
+<resources>
+    <string name="str_net_connected">"Network  connected!"</string>
+    <string name="str_net_not_connected">Network not connected!</string>
+    <string name="str_loading">Loading</string>
+    <string name="str_exit_tip">Click again to exit</string>
+    <string name="str_double_click_tip">double click</string>
+    </resources>
