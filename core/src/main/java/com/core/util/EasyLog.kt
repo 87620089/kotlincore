@@ -5,7 +5,6 @@ import android.os.Environment
 import android.text.TextUtils
 import android.util.Log
 import com.blankj.utilcode.util.FileIOUtils
-import com.core.BuildConfig
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
@@ -355,7 +354,7 @@ class EasyLog private constructor(
         /**
          * 是否开启日志输出？当为true时。才进行日志输出
          */
-        var debug = BuildConfig.DEBUG
+        var debug = true
 
         /**
          * 格式化日志输出样式。
