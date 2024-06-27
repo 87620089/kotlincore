@@ -2,12 +2,12 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
-    id 'maven-publish'
+    id 'maven-publish' //添加maven publish插件
 }
 
 android {
     namespace 'com.core'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         minSdk 24
@@ -39,6 +39,19 @@ android {
     }
 
 
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.tl.core' //groupId 随便取
+                artifactId = 'core'  //test随便取
+                version = '1.0.1'
+            }
+        }
+    }
 }
 
 

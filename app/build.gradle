@@ -52,5 +52,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     api project(path: ':core')
-//    implementation 'com.github.87620089:kotlincore:1.0.0'
+//    implementation 'com.github.87620089:kotlincore:1.0.1'
 }
