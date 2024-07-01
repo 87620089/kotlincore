@@ -25,16 +25,6 @@ class MainActivity : PermissionBaseActivity<TestViewModel
             .request { allGranted, _, _ ->
                 if (allGranted) {
                     showLoading( isCancelable = true, isCancelOutside = true)
-//                    CoroutineScope(Dispatchers.Main+ SupervisorJob()).launch {
-//                        withContext(Dispatchers.IO) {
-//                            val result=RetrofitClient.createApi(Api::class.java).check(
-//                                "",
-//                                "02:12:34:03:93:B4",
-//                                "2",
-//                                "com.eningqu.speakfreely"
-//                            )
-//                        }
-                    mViewModel.check("","02:12:34:03:93:B4","2","com.eningqu.speakfreely")
                 }
             }
     }

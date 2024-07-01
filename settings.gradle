@@ -26,5 +26,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "core2024"
-//include ':app'
+include ':app'
 include ':core'
