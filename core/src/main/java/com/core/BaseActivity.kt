@@ -138,8 +138,8 @@ abstract class BaseActivity<VM : ViewModel, SV : ViewDataBinding> : AppCompatAct
         @ColorInt colorInt: Int,
         @IntRange(from = 0, to = 255) alphaInt: Int = 80
     ) {
-        StatusBarUtil.setTranslucent(this, alphaInt)
-        StatusBarUtil.setColor(this, colorInt)
+//        StatusBarUtil.setTranslucent(this, alphaInt)
+        StatusBarUtil.setColor(this, colorInt,alphaInt)
     }
 
     @JvmOverloads
