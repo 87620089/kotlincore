@@ -11,6 +11,6 @@ dependencyResolutionManagement {
 Step 2. Add the dependency
 
 dependencies {
-	        implementation 'com.github.87620089:kotlincore:v1.0.1'
+	        implementation 'com.github.87620089:kotlincore:1.0.1'
 	}
  
